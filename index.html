@@ -35,25 +35,26 @@
 
 
                 <h6 class="mt-5 text-start">Meomory</h6>
-                <button class="btn btn-outline-dark"> <small>8GB unified memory</small></button>
-                <button class="btn btn-outline-dark"><small>16GB unified memory</small></button>
+                <button id="memory-eight" class="btn btn-outline-dark"><small>8GB unified memory</small></button>
+                <button id="memory-sixteen" class="btn btn-outline-dark"><small>16GB unified memory</small></button>
 
 
                 <!-- storage section -->
 
 
                 <h6 class="mt-5 text-start">Storage</h6>
-                <button class="btn btn-outline-dark"> <small>256GB SSD storage</small></button>
-                <button class="btn btn-outline-dark"><small>5126GB SSD storage</small></button>
-                <button class="btn btn-outline-dark my-1"><small>1TB SSD storage</small></button>
+                <button id="first-storage" class="btn btn-outline-dark"> <small>256GB SSD storage</small></button>
+                <button id="second-storage" class="btn btn-outline-dark"><small>5126GB SSD storage</small></button>
+                <button id="third-storage" class="btn btn-outline-dark my-1"><small>1TB SSD storage</small></button>
 
 
                 <!-- delivery section -->
 
 
                 <h6 class="mt-5 text-start">Choose your delivery option</h6>
-                <button class="btn btn-outline-dark"> <small>Friday, Aug 25 FREE Delivery</small></button>
-                <button class="btn btn-outline-dark my-1"><small>Friday, Aug 21 Delivery charge $20</small></button>
+                <button id="free-delivery" class="btn btn-outline-dark"> <small>FREE Delivery</small></button>
+                <button id="charge-delivery" class="btn btn-outline-dark my-1"><small>Delivery charge Applicable
+                    </small></button>
 
                 <!-- price section -->
                 <div class="row mt-5 lh-1">
@@ -79,7 +80,7 @@
                         <h6>Extra stroage Cost</h6>
                     </div>
                     <div class="col">
-                        <p>$<span id="stroage-price">0</span></p>
+                        <p>$<span id="storage-price">0</span></p>
                     </div>
                 </div>
                 <hr style="width: 300px;">
@@ -97,7 +98,7 @@
                         <h6>Total Price</h6>
                     </div>
                     <div class="col">
-                        <p>$<span id="total-price">1299</span></p>
+                        <p>$<span id="sub-total-price">1299</span></p>
                     </div>
                 </div>
                 <div class="row lh-1">
@@ -117,7 +118,8 @@
         <h1 class="text-center">Total:$<span id="total">1299</span>
         </h1>
     </footer>
-
+    <!-- javaScipt file  -->
+    <script src="/app.js"></script>
 </body>
 
 </html>
