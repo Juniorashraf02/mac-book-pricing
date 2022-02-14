@@ -1,5 +1,6 @@
 const bestPiceLocation = document.getElementById('best-price');
 const subTotalPriceLocation = document.getElementById('sub-total-price');
+const inputLocation = document.getElementById('input-value');
 
 
 // adding all the prices
@@ -49,6 +50,21 @@ document.getElementById('charge-delivery').addEventListener('click', function ()
     deliveryPriceLocation.innerText = 20;
     addPrice();
 });
+
+// promo code section
+document.getElementById('apply-btn').addEventListener('click', function () {
+    if (inputLocation.value == 'istiak') {
+        subTotalPriceLocation.innerText = subTotalPriceLocation.innerText - 100;
+        document.getElementById('apply-section').style.display = 'none';
+        document.getElementById('total').innerText = subTotalPriceLocation.innerText
+        return subTotalPriceLocation.innerText;
+    }
+    else {
+        document.getElementById('wrong-code').innerText = 'Invalid promo code!';
+        document.getElementById('total').innerText = subTotalPriceLocation.innerText
+    }
+});
+
 
 
 
