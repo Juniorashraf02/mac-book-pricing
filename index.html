@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac-Book pricing</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <header class="my-2">
+        <h1 class="text-primary text-center">Choose your items according to your need</h1>
+    </header>
+    <main class="mt-5">
+        <!-- left side of body with picture -->
+        <div class="row">
+            <div class="col-12 col-sm-6  order-sm-first">
+                <img class="img-fluid " src="./images/mac.png" alt="Picture of a MacBook" srcset="">
+                <p class="text-muted text-justify my-5"><small>Apple M1 chip with 8-core CPU with 4 performance cores
+                        and
+                        efficiency
+                        cores, 7-core GPU, and 16 core Neural Engine 8GB unified memory 25GB SSD storage Two Thunderbolt
+                        / USB
+                        4-ports Magic Mouse with Keyboard</small></p>
+            </div>
+            <!-- right side of body details about product -->
+            <div class="col-6 col-sm-6 col-12">
+                <h2 class="text-start">Customize your white 24 inch iMac with Apple M1 chip</h2>
+
+
+
+                <!-- Memory section -->
+
+
+                <h6 class="mt-3 text-start">Meomory</h6>
+                <button id="memory-eight" class="btn btn-outline-dark"><small>8GB unified memory</small></button>
+                <button id="memory-sixteen" class="btn btn-outline-dark"><small>16GB unified memory</small></button>
+
+
+                <!-- storage section -->
+
+
+                <h6 class="mt-3 text-start">Storage</h6>
+                <button id="first-storage" class="btn btn-outline-dark"> <small>256GB SSD storage</small></button>
+                <button id="second-storage" class="btn btn-outline-dark"><small>5126GB SSD storage</small></button>
+                <button id="third-storage" class="btn btn-outline-dark my-1"><small>1TB SSD storage</small></button>
+
+
+                <!-- delivery section -->
+
+
+                <h6 class="mt-3 text-start">Choose your delivery option</h6>
+                <button id="free-delivery" class="btn btn-outline-dark"> <small>FREE Delivery</small></button>
+                <button id="charge-delivery" class="btn btn-outline-dark my-1"><small>Delivery charge Applicable
+                    </small></button>
+
+                <!-- price section -->
+                <div class="row mt-5 lh-1">
+                    <div class="col">
+                        <h6>Best Price</h6>
+                    </div>
+                    <div class="col">
+                        <p>$<span id="best-price">1299</span></p>
+                    </div>
+                </div>
+
+                <div class="row lh-1">
+                    <div class="col-6">
+                        <h6>Extra Meomory Cost</h6>
+                    </div>
+                    <div class="col-2">
+                        <p>$<span id="memory-price">0</span></p>
+                    </div>
+                </div>
+
+                <div class="row lh-1">
+                    <div class="col">
+                        <h6>Extra stroage Cost</h6>
+                    </div>
+                    <div class="col">
+                        <p>$<span id="storage-price">0</span></p>
+                    </div>
+                </div>
+
+                <div class="row lh-1">
+                    <div class="col">
+                        <h6>Delivery charge</h6>
+                    </div>
+                    <div class="col">
+                        <p>$<span id="delivery-price">0</span></p>
+                    </div>
+                </div>
+                <hr class="mt-0" style="color: rgba(0, 0, 0, 0.926); height: 2px;width: 340px;">
+                <div class="row lh-1">
+                    <div class="col">
+                        <h6>Total Price</h6>
+                    </div>
+                    <div class="col">
+                        <p>$<span id="sub-total-price">1299</span></p>
+                    </div>
+                </div>
+                <div id="apply-section" class="row lh-1">
+                    <h6>Add pormo code</h6>
+                    <div class="col">
+                        <input id="input-value" class="mt-1" type="text">
+                    </div>
+                    <div class="col">
+                        <p><button id="apply-btn" class="btn btn-danger  text-white"> <small
+                                    class="p-2">Apply</small></button></span>
+                        </p>
+                    </div>
+                    <p id="wrong-code" class="text-danger"></p>
+                </div>
+            </div>
+    </main>
+    <footer class="mt-0">
+        <hr class="mt-0">
+        <h1 class="text-center">Total:&nbsp;$<span id="total">1299</span>
+        </h1>
+    </footer>
+    <!-- javaScipt file  -->
+    <script src="/app.js"></script>
+</body>
+
+</html>
